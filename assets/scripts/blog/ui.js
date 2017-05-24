@@ -26,6 +26,8 @@ const createBlogFailure = () => {
 }
 
 const getBlogsSuccess = (data) => {
+  console.log('get blog data is: ', data)
+  console.log('data.user is:', data.user)
   const showBlogsHtml = showBlogsTemplate({
     posts: data.posts
   })

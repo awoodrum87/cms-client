@@ -4,6 +4,7 @@ const store = require('../store')
 const api = require('./api')
 
 const signUpSuccess = (data) => {
+  console.log('data is: ', data)
   // store user information
   store.user = data.user
   // store values from sign up input fields
@@ -34,6 +35,7 @@ const signUpFailure = (error) => {
 }
 
 const signInSuccess = (data) => {
+  console.log('data is: ', data)
   // store user data
   const userEmail = data.user.email
   store.user = data.user // this stores the entire user object
